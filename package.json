@@ -23,13 +23,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "coverage": "yarn test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:jest-dom/recommended"
     ]
   },
   "browserslist": {
@@ -48,7 +50,10 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/babel__template": "^7.4.4",
     "@types/testing-library__react": "^10.2.0",
-    "msw": "0.36.3"
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "msw": "0.36.3",
+    "prettier": "3.1.0"
   },
   "msw": {
     "workerDirectory": "public"
