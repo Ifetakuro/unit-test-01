@@ -48,6 +48,9 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/babel__template": "^7.4.4",
     "@types/testing-library__react": "^10.2.0",
-    "msw": "^0.44.2"
+    "msw": "0.36.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
